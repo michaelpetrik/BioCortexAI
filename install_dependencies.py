@@ -4,7 +4,7 @@ import subprocess
 import platform
 
 def install_package(package):
-        try:
+    try:
         print(f"--- Instaluji balíček: {package} ---")
         # Použití sys.executable zajišťuje, že se použije pip z aktuálního prostředí
         subprocess.check_call([sys.executable, "-m", "pip", "install", package])
@@ -20,7 +20,7 @@ def install_package(package):
 def main():
     print("==============================================================")
     print("  Hybridn LLM with PlantNet laeyers - dependencies installer")
-    print("  (c)2025 OpenTechLab Jablonec nad Nisou s. r. o.
+    print("  (c)2025 OpenTechLab Jablonec nad Nisou s. r. o.")
     print("==============================================================")
     print("This script will install all needed libraries.\n")
 
